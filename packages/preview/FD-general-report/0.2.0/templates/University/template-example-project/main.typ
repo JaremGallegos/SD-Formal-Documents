@@ -1,30 +1,30 @@
 #import "../../../src/lib.typ": *
 
-#set text(font: "Gill Sans MT", lang: "es")
+#set text(font: "Carlito", lang: "es")
 #show: fd-general-report.with(
-  title: "Desarrollo del Producto Académico 3 \npara el Curso Estadística y \nProbabilidades",
-  description: "Proyecto Final de Curso",
+  title: "Modelado de la Unidad Lógica Aritmético (ALU) en Arquitecturas Von Neumann Empleando una Máquina de Turing para la Implementación de la Operación de Conjunción (AND)",
+  description: "Producto Académico 3",
   authors: (
-    "Marcio Gonzalo Sequeiros Palomino",
-    "Gabriela Sulca Valencia",
-    "Jhonsis Yazmani Pacocha Umiyauri",
-    "Gallegos Yanarico, Jarem Joseph",
+    "Gallegos Yanarico, Jarem Joseph (GRUPO B) - Único Participante del Producto",
   ),
   date: datetime.today().display("[day] [month repr:long] [year]"),
-  course: "Estadística y Prababilidades",
+  course: "Teoría de la Computación",
   department: "Universidad Continental",
-  department-full-title: "Curso General Interfacultad",
-  address-i: "Av. Porongoche 500, Paucarpata",
-  address-ii: "(054) 603- 535",
-  department-website: "www.cibertec.edu.pe",
+  department-full-title: "Curso Especializado de Carrera",
+  address-i: "La Canseco II Valle Chili \nJosé Luis Bustamante y Rivero",
+  address-ii: "(054) 412030",
+  department-website: "www.ucontinental.edu.pe",
 
   before: (
-    contents: include "sections/preface/contents.typ",
-    readers-guide: include "sections/preface/readers-guide.typ",
+    contents: include "sections/preface/contents.typ"
   ),
 )
-
 #include "sections/introduction.typ"
+#include "sections/marco-teorico.typ"
+#include "sections/desarrollo.typ"
+#include "sections/resultados.typ"
 #include "sections/conclusion.typ"
+#include "sections/bibliografia.typ"
+#include "sections/anexos.typ"
 
 #pagebreak()
